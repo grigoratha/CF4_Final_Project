@@ -1,0 +1,29 @@
+{
+	"info": {
+		"_postman_id": "41c7737a-409d-4d5c-b70d-6f590a3d1d5e",
+		"name": "Image",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31410151"
+	},
+	"item": [
+		{
+			"name": "Upload Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/C:/Users/User/Downloads/fiat_punto_integralle.jpg"
+						}
+					]
+				},
+				"url": "http://localhost:8080/api/upload"
+			},
+			"response": []
+		}
+	]
+}

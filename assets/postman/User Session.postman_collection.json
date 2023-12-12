@@ -1,0 +1,88 @@
+{
+	"info": {
+		"_postman_id": "3e7f8e57-a86f-4765-9c37-173511349e1f",
+		"name": "User Session",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "31410151"
+	},
+	"item": [
+		{
+			"name": "List All Sessions",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/session/all"
+			},
+			"response": []
+		},
+		{
+			"name": "List Session By ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/session/find/id/1"
+			},
+			"response": []
+		},
+		{
+			"name": "List Session By Token",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/session/find/token/430a275a-a33a-49de-a8aa-e63b809a35cf"
+			},
+			"response": []
+		},
+		{
+			"name": "Add User Session",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/session/add/354"
+			},
+			"response": []
+		},
+		{
+			"name": "Update User Session",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\":\"user6\",\r\n    \"password\":\"pass6\",\r\n    \"email\":\"mail6@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/session/update/354"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User Session",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/session/delete/1"
+			},
+			"response": []
+		}
+	]
+}

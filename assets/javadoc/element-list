@@ -1,0 +1,7 @@
+com.athgri.finalproject
+com.athgri.finalproject.daoService
+com.athgri.finalproject.dtoController
+com.athgri.finalproject.exceptions
+com.athgri.finalproject.jpaInterface
+com.athgri.finalproject.model
+com.athgri.finalproject.utilities
