@@ -1,0 +1,143 @@
+.item-grid-view {
+    margin: 12px;
+    display :grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: start;
+    grid-gap:12px;
+}
+
+.item-container {
+    min-width:300px;
+    display:grid;
+    grid-template-rows: 48px 1fr 120px 120px;
+    align-items:center;
+    border:1px solid silver;
+    border-radius: 4px;
+    box-shadow: 2px 3px 3px LightGray;
+    user-select:none;
+}
+
+.item-container:hover {
+    box-shadow: 4px 6px 6px Gray;
+}
+
+.item-info {
+    height: 50%;
+    padding: 4px;
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    border-bottom:2px Solid Gray;
+    background: LightGray;
+    text-align: center;
+}
+
+.item-info div:nth-child(3) {
+    padding-left: 12px;
+    justify-self: start;
+}
+
+.item-info div:nth-child(4) {
+    width: 24px;
+    padding: 1px;
+    margin-right: 12px;
+    justify-self: end;
+    background: #464646;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px gray;
+    color: whitesmoke;
+}
+
+.item-info div:nth-child(1) {
+    padding-left:4px;
+    justify-self: start;
+}
+
+.item-info div:nth-child(2) {
+    padding-right:4px;
+    justify-self: end;
+}
+
+.item-image img {
+    width: 280px;
+}
+
+.item-description {
+    padding: 4px;
+    text-align:center;
+    font-style: italic;
+    text-shadow:2px 2px 2px LightGray;
+}
+
+.item-specifications {
+    justify-self: center;
+    padding-bottom:12px;
+    text-align: left;
+}
+
+.item-specifications table td:nth-child(1) {
+    padding-right: 12px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.item-specifications td {
+    border-bottom: 1px dotted Gray;
+}
+
+.favorites-container {
+    top: -24px;
+    left: -68px;
+    width: 24px;
+    padding: 4px 2px 0px 4px;
+    position: relative;
+    text-align: center;
+    font-size: 1.3em;
+    border-radius: 12px;
+    background: aliceblue;
+    box-shadow: 2px 2px 2px LightGray;
+    color: #464646;
+}
+
+.favorites-container > span {
+    cursor: pointer;
+}
+
+.favorites-container > span {
+    cursor: pointer;
+}
+
+.favorites-container > span:hover {
+    filter: brightness(1.5);
+}
+
+.item-controls {
+    padding: 4px 12px;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    background: aliceblue;
+}
+
+.item-controls div:nth-child(1) {
+    justify-self: start;
+}
+
+.item-controls div:nth-child(2) {
+    justify-self: end;
+}
+
+.item-controls div:nth-child(1),
+.item-controls div:nth-child(2) {
+	margin: 2px 0px;
+	padding: 3px 12px;
+	border: 1px Solid LightGray;
+	box-shadow: 2px 2px 2px Gray;
+}
+
+.edit-action {
+    cursor:pointer;
+}
+
+.delete-action {
+    color:rgb(218, 77, 105);
+    cursor:pointer;
+}

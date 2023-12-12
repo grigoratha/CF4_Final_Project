@@ -1,0 +1,138 @@
+@media only screen and (min-width: 1301px) {
+
+    #itemGridView {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:1300) and (min-width: 992px) {
+
+    #itemGridView {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:991px) and (min-width: 741px) {
+
+    #itemGridView {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:740px) and (min-width: 660px) {
+
+    #itemGridView {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menu-10item-grid {
+        grid-template-columns: 120px 120px auto 32px auto 32px;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header div:nth-child(2) {
+        display: none;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header div:nth-child(2) {
+        display: none;
+    }
+    
+    #user {
+        margin-right: initial;
+        justify-content: center;
+    }
+
+    #btn-add {
+        display: none !important;
+    }
+
+    #btn-add-mobile {
+        display: initial;
+        justify-self: end;
+    }
+}
+
+@media only screen and (max-width:659px) {
+
+    #itemGridView {
+        grid-template-columns: 1fr;
+    }
+
+    #header {
+        display: flex;
+        justify-content: center;
+    }
+
+    #header div:nth-child(2) {
+        display: none;
+    }
+
+    #user {
+        margin-right: initial;
+        justify-content: center;
+    }
+
+    .menu-10item-grid {
+        grid-template-columns: 32px 32px 90px 38px auto 32px;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .button-mobile {
+        display: block;
+    }
+
+    #btn-add {
+        display: none !important;
+    }
+    
+    #btn-favorites,
+    #btn-settings,
+    #btn-user-update,
+    #btn-logout {
+        display: initial;
+    }
+
+    #form-container {
+        padding: 2px;
+        grid-template-columns: 0.2fr 1fr auto
+    }
+
+    #btn-save,
+    #btn-upload-lbl {
+        display: initial;
+    }
+}
+
+@media only screen and (max-width:520px) {
+
+    #form-container {
+        padding: 2px;
+        grid-template-columns: 0px 1fr auto
+    }
+
+    #form-container input::placeholder, 
+    #form-container textarea::placeholder {
+        color: #464646;
+        font-style: italic;
+    }
+}
+
+@media only screen and (max-width:410px) {
+
+    body {
+        margin: 4px;
+    }
+}

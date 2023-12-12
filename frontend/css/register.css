@@ -1,0 +1,16 @@
+#register-form select {
+    border: none;
+    border: 1px Solid Gray;
+    background: White;;
+}
+
+#register-form span {
+    padding-left: 6px;
+    text-align: left;
+}
+
+#btn-register,
+#btn-cancel {
+    width: 90px;
+    justify-self: center;
+}

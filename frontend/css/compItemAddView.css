@@ -1,0 +1,136 @@
+#form-container {
+    padding: 12px;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 0.5fr;
+}
+
+#form-container input, textarea {
+    width: 100%;
+    height: 80%;
+    border: none;
+    border-bottom: 1px Solid Gray;
+    background: #e9e9ed;
+    box-shadow: 2px 3px 2px LightGray;
+}
+
+#form-container input::placeholder, 
+fomrcontainer textarea::placeholder {
+    color: transparent;
+}
+
+#vehicle-description {
+    font-family: Calibri;
+    font-size: 0.75em;
+    resize: none;
+}
+
+#form-header {
+    padding: 6px 12px;   
+    grid-column: span 3;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: aliceblue;
+}
+
+#form-col1 {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#form-col1 > div {
+    height: 24px;
+    min-width: 100px;
+    padding: 6px;
+    margin-left: 4px;
+    display: grid;
+    align-content: center;
+    text-align: right;
+    border-bottom:1px dotted LightGray;
+    font-family: Consolas;
+    text-shadow: 2px 2px 2px Gray;
+    font-size: 0.75em;
+}
+
+#form-col2 {
+    border-right:none;
+    border-radius: 0px;
+}
+
+#form-col2 > div {
+    height: 24px;
+    width: 240px;
+    padding: 6px;
+    margin-right: 4px;
+    text-align: left;
+    border-bottom:1px dotted WhiteSmoke
+}
+
+#form-col3 {
+    border-left: none;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+#form-col3 > div {
+    height: 24px;
+    padding: 6px;
+    margin-right: 4px;
+    text-align: left;
+    border-bottom:1px dotted WhiteSmoke
+}
+
+#form-col3 .fa-circle-info {
+    color: steelblue;
+    cursor: pointer;
+}
+
+#vehicle-image {
+    font-size: 0.70em;
+}
+
+#form-col1 div:nth-child(3),
+#form-col2 div:nth-child(3),
+#form-col3 div:nth-child(3) {
+    height: 64px;
+}
+
+#vehicle-brand,
+#vehicle-color {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid Gray;
+    box-shadow: 2px 3px 4px LightGray;
+}
+
+#vehicle-color-sample {
+    width: 32px;
+    height: 75%;
+    border: 1px solid LightGray;
+}
+
+#upload-button {
+    height: 12px;
+    padding: 4px 6px;
+    position: relative;
+    top: -2px;
+}
+
+#info-container {
+    padding: 12px;
+    visibility: hidden;
+}
+
+#info-message {
+    padding-left: 124px;
+    text-align: left;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#info-message .fa-lightbulb {
+    padding-right: 6px;
+    color: Orange;
+}
+

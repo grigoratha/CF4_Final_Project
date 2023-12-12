@@ -1,0 +1,123 @@
+:root {
+    --menu-color: White;
+    --header-color: #a2b9bc;
+    --content-color: White;
+    --footer-color: #36353d;
+}
+
+body {
+    min-width: 375px;
+    font-family: Calibri;
+}
+
+.centered {
+    display:grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.h-centered {
+    display:grid;
+    justify-content: center;
+}
+
+.v-centered {
+    display:grid;
+    align-items: center;
+}
+
+.bordered {
+    border: 1px solid #4645;
+}
+
+.rounded {
+    border-radius: 4px;
+}
+
+.card {
+    box-shadow: 2px 3px 3px LightGray;
+}
+
+.h-2-grid {
+    display: grid;
+    grid-template-columns: 0.1fr 1fr;
+}
+
+.grid-2-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-col-responsive {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.menu-10item-grid {
+    display:grid;
+    grid-template-columns: 120px 120px auto 32px auto 120px;
+    padding-left:12px;
+    padding-right:12px;
+}
+
+.menu-10item-grid div {
+    margin-right:12px
+}
+
+.menu-10item-grid div span {
+    padding-left:4px;
+}
+
+.button {
+    margin: 0;
+	padding: 4px 8px;
+    display: inline-block;
+	border: 1px solid transparent;
+	border-radius: 3px;
+	box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+	background-color: #5b7e96;
+	color: #fff;
+	cursor: pointer;
+	font-size: 13px;
+	font-weight: 400;
+	line-height: 1.15385;
+	text-align: center;
+	user-select: none;
+	white-space: nowrap;
+}
+
+.button:hover,
+.button-mobile:hover {
+    filter: brightness(0.9);
+}
+
+.button-mobile {
+    width: 18px;
+    padding: 3px 4px 3px 4px;
+    text-align: center;
+    background: #5b7e96;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+	box-shadow: rgba(255, 255, 255, .4) 0 1px 0 0 inset;
+    cursor: pointer;
+}
+
+.vintage-font {
+    font-family: 'YesterYear';
+    font-size:32px;
+    text-shadow: 4px 4px 6px Gray;
+    color: #464646;
+}
+
+.hover-h {
+    background-image: linear-gradient(WhiteSmoke,LightGray);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .2s;
+}
+
+.hover-h:hover {
+    background-size: 100% 100%;
+}
