@@ -44,7 +44,9 @@
 - Postman Collections: assets/postman/
 - SQL Scripts: assets/sql
 
-  #### Description
+  ---
+
+#### Description
 This projects implements a car inventory management system which involves a user authentication system, a user session management system, a user management system and a favorites list management system 
 
 - Users need to create an account and must login with their credentials so as to be authenticated and create a unique session.
@@ -58,4 +60,35 @@ This projects implements a car inventory management system which involves a user
 
 - Users are able to create a favorites items list by adding / removing the desired items that are available in the inventory.
 
-- The search functionality supports to either search by an item's ID or by an item's name (name for the current car inventory means matches by either brand or model) 
+- The search functionality supports to either search by an item's ID or by an item's name (name for the current car inventory means matches by either brand or model)
+
+  ---
+
+#### Database Snapshot <br>
+  *This is just for reference and do not reflect the actual column names or include all columns of the tables in the database*
+###### User
+| ID  | Username | Password   | Role  |
+|-----|----------|------------|-------|
+| 350 | Senna    | admin      | admin |
+| 354 | Stig     | user       | user  |
+| 402 | Hamilton | Hamilton1! | user  |
+
+###### Favorites
+| ID  | Items List |
+|-----|------------|
+| 402 | [302]      |
+
+###### Cars
+| ID  | Brand         | Model                  | Year |
+|-----|---------------|------------------------|------|
+| 1   | Lancia        | Delta HF Integrale 16v | 1989 |
+| 2   | Ford          | Model A                | 1929 |
+| 3   | Lotus         | Europa S2              | 1970 |
+| 4   | Mercedes Benz | 220 SB                 | 1963 |
+| 5   | Chrysler      | Imperial Airflow Coupe | 1935 |
+| 6   | Chevrolet     | Corvette Stingray      | 1966 |
+| 7   | Ferrari       | Mondial Cabriolet      | 1985 |
+| 8   | Cadillac      | EL Dorado Brougham     | 1957 |
+| 9   | Rolls Royce   | Silver Cloud III Coupe | 1965 |
+| 10  | Ford          | Mustang Mach 1         | 1970 |
+| 302 | Fiat          | Punto GT               | 1993 |
