@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CF4 Final Project</title>
+
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/compItemView.css">
+        <link rel="stylesheet" href="css/compItemAddView.css">
+        <link rel="stylesheet" href="css/compErrorView.css">
+        <link rel="stylesheet" href="css/compLoaderView.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/menu.css">
+
+        <link rel="stylesheet" href="css/responsive.css">
+
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Yesteryear&display=swap" rel="stylesheet"> 
+
+        <script src="js/jquery.js"></script>
+        <script src="fontawesome/js/all.js"></script> 
+
+        <script src="js/rest.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/component.js"></script>
+        <script src="js/compItemAddView.js"></script> 
+        <script src="js/compUserEditView.js"></script> 
+        <script src="js/index.js"></script> 
+    </head>
+
+    <body>
+        <div id="login" style="display:none">
+            <div id="login-form">
+                <div>Login</div>
+                <span>Username:</span>
+                <input id="username" type="text"></input>
+                <span>Password: </span>
+                <input id="password" type="password"></input>
+                <div id="btn-login" class="button">Login</div>
+            </div>
+            <div id="new-user">
+                <a href="register.html">Register</a>
+            </div>
+        </div>
+
+        <div id="main">
+            <div id="header" class="h-2-grid v-centered">
+                <div>
+                    <img src="img/logo.png" onclick="loadDefaultComp();">
+                </div>
+                <div class="rounded centered card">
+                    <h2 class="vintage-font">Welcome to Vintage Cars Inventory</h2>
+                </div>
+            </div>
+
+            <div id="user">
+                <div>
+                    <i class="fa-solid fa-circle-user"></i>
+                    <span id="current-user">{{User}}</span>
+                </div>
+                <div>
+                    <i class="fa-solid fa-user-shield"></i>
+                    <span id="current-role">{{Role}}</span>
+                </div>
+                <div id="btn-favorites" class="button">
+                    <i class="fa-solid fa-heart-circle-check"></i>
+                </div>
+                <div id="btn-settings" class="button">
+                    <i class="fa-solid fa-gear"></i>
+                </div>
+                <div id="btn-logout" class="button">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <span style="padding-left:6px;">Logout</span>
+                </div>
+            </div>
+
+            <div id="menu" class="rounded bordered v-centered">
+                <div class="menu-10item-grid v-centered">
+                    <div id="btn-view-all" class="button" title="View all vehicles of the inventory">
+                        <i class="fa-regular fa-rectangle-list"></i> 
+                        <span>View All</span>
+                    </div>
+                    <div id="btn-view-all-mobile" class="button-mobile">
+                        <i class="fa-regular fa-rectangle-list"></i> 
+                    </div>
+                    <div id="btn-search" class="button" style="margin-right:6px;" title="Search vehicles based on your specified search criteria">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                        <span>Search</span>
+                    </div>
+                    <div id="btn-search-mobile" class="button-mobile">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                    </div>
+                    <input id="search-input" type="text"></input>
+                    <span id="search-info"><i class="fa-solid fa-circle-info"></i></span>
+                    
+                    <div id="search-count"></div>
+                    
+                    <div id="btn-add" class="button" title="Add a new vehicle to the inventory">
+                        <i class="fa-solid fa-square-plus"></i>
+                        <span>Add</span>
+                    </div>
+                    <div id="btn-add-mobile" class="button-mobile">
+                        <i class="fa-solid fa-square-plus"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content" class="rounded bordered centered">
+                <div id="app">
+                    <img src="img/app-idle-2.gif" style="width:50%">
+                    <div>
+                        Feel free to search through the inventory, <br> 
+                        add, edit or delete car information!
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer-wrapper">
+                <div id="footer" class="bordered card grid-2-col v-centered">
+                    <div>
+                        <div> <i class="fa-solid fa-building-columns"></i> Coding Factory 4</div>
+                        <div><i class="fa-solid fa-user-tie"></i> Grigorakis Athanasios</div>
+                        <div><i class="fa-solid fa-at"></i> grigoratha@aueb.gr</div>
+                    </div>
+                    <div style="text-align: right;">
+                        <img id="footer-pseudo-effect" src="img/effect.gif">    
+                    </div>
+                </div>
+                <div id="footer-note"></div>
+            <div>
+        </div>
+    </body>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() { 
+            checkSession( documentReload, "all"); 
+        });
+
+        getById("btn-favorites").addEventListener("click", function() {
+            checkSession(showFavorites, "all", "Sorry your user session is invalid");
+        }) 
+
+        getById("btn-settings").addEventListener("click", function() {
+            checkSession(showUserForm, "all", "Sorry your user session is invalid");
+            
+        }); 
+
+        getById("btn-add").addEventListener("click", function() {
+            checkSession( showAddForm, "admin", "Sorry your user role does not allow adding items");
+        });
+
+        getById("btn-add-mobile").addEventListener("click", function() {
+            checkSession( showAddForm, "admin", "Sorry your user role does not allow adding items");
+        });
+        
+        getById("btn-view-all").addEventListener("click", showAll);
+        getById("btn-view-all-mobile").addEventListener("click", showAll);
+
+        getById("btn-search").addEventListener("click", search);
+        getById("btn-search-mobile").addEventListener("click", search);
+
+        getById("search-info").addEventListener("click", showSearchInfo);
+
+        getById("btn-login").addEventListener("click", login);
+        getById("btn-logout").addEventListener("click", logout);
+        
+    </script>
+</html>

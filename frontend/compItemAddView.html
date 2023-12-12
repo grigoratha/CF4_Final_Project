@@ -1,0 +1,301 @@
+<div id="form-container">
+    <div id="form-header" class="rounded bordered card">
+        Please enter vehicle's information
+    </div>
+
+    <div id="form-col1" class="rounded bordered card">
+        <div class="required">* Brand: </div>
+        <div>* Model: </div>
+        <div>Description: </div>
+        <div>Image:</div>
+        <div>* Year: </div>
+        <div>Mileage: </div>
+        <div>* Engine CC:</div>
+        <div>Engine BHP:</div>
+        <div>Color: </div>
+        <div></div>
+    </div>
+
+    <div id="form-col2" class="rounded bordered card">
+        <div>
+            <select id="vehicle-brand">
+                <option value="Audi">Audi</option>
+                <option value="BMW">BMW</option>
+                <option value="Buick">Buick</option>
+                <option value="Cadillac">Cadillac</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Chrysler">Chrysler</option>
+                <option value="Dodge">Dodge</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Ferrari">Ferrari</option>
+                <option value="Ford">Ford</option>
+                <option value="GM">GM</option>
+                <option value="GEM">GEM</option>
+                <option value="GMC">GMC</option>
+                <option value="Honda">Honda</option>
+                <option value="Hummer">Hummer</option>
+                <option value="Hyundai">Hyundai</option>
+                <option value="Infiniti">Infiniti</option>
+                <option value="Isuzu">Isuzu</option>
+                <option value="Jaguar">Jaguar</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Kia">Kia</option>
+                <option value="Lamborghini">Lamborghini</option>
+                <option value="Lancia">Lancia</option>
+                <option value="Land Rover">Land Rover</option>
+                <option value="Lexus">Lexus</option>
+                <option value="Lincoln">Lincoln</option>
+                <option value="Lotus">Lotus</option>
+                <option value="Mazda">Mazda</option>
+                <option value="Mercedes-Benz">Mercedes-Benz</option>
+                <option value="Mercury">Mercury</option>
+                <option value="Mitsubishi">Mitsubishi</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Oldsmobile">Oldsmobile</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Pontiac">Pontiac</option>
+                <option value="Porsche">Porsche</option>
+                <option value="Regal">Regal</option>
+                <option value="Rolls Royce">Rolls Royce</option>
+                <option value="Saab">Saab</option>
+                <option value="Saturn">Saturn</option>
+                <option value="Subaru">Subaru</option>
+                <option value="Suzuki">Suzuki</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Volvo">Volvo</option>
+            </select>
+        </div>
+        <div>
+            <input id="vehicle-model" type="text" placeholder="Model"></input>
+        </div>
+        <div>
+            <textarea id="vehicle-description" maxlength="255" placeholder="Description"></textarea>
+        </div>
+        <div>
+            <input id="vehicle-image" type="text" placeholder="Image"></input>
+        </div>
+        <div>
+            <input id="vehicle-year" type="number" placeholder="Year"></input>
+        </div>
+        <div>
+            <input id="vehicle-mileage" type="number" placeholder="Mileage"></input>
+        </div>
+        <div>
+            <input id="vehicle-engine-cc" type="number" placeholder="Engine CC"></input>
+        </div>
+        <div>
+            <input id="vehicle-engine-hp" type="number" placeholder="Engine BHP"></input>
+        </div>
+        <div>
+            <select id="vehicle-color">
+                <option value=""></option>
+                    <option value="AntiqueWhite">AntiqueWhite</option>
+                    <option value="AliceBlue">AliceBlue</option>
+                    <option value="Aqua">Aqua</option>
+                    <option value="Aquamarine">Aquamarine</option>
+                    <option value="Azure">Azure</option>
+                    <option value="Beige">Beige</option>
+                    <option value="Bisque">Bisque</option>
+                    <option value="Black">Black</option>
+                    <option value="BlanchedAlmond">BlanchedAlmond</option>
+                    <option value="Blue">Blue</option>
+                    <option value="BlueViolet">BlueViolet</option>
+                    <option value="Brown">Brown</option>
+                    <option value="BurlyWood">BurlyWood</option>
+                    <option value="CadetBlue">CadetBlue</option>
+                    <option value="Chartreuse">Chartreuse</option>
+                    <option value="Chocolate">Chocolate</option>
+                    <option value="Coral">Coral</option>
+                    <option value="CornflowerBlue">CornflowerBlue</option>
+                    <option value="Cornsilk">Cornsilk</option>
+                    <option value="Crimson">Crimson</option>
+                    <option value="Cyan">Cyan</option>
+                    <option value="DarkBlue">DarkBlue</option>
+                    <option value="DarkCyan">DarkCyan</option>
+                    <option value="DarkGoldenRod">DarkGoldenRod</option>
+                    <option value="DarkGray">DarkGray</option>
+                    <option value="DarkGrey">DarkGrey</option>
+                    <option value="DarkGreen">DarkGreen</option>
+                    <option value="DarkKhaki">DarkKhaki</option>
+                    <option value="DarkMagenta">DarkMagenta</option>
+                    <option value="DarkOliveGreen">DarkOliveGreen</option>
+                    <option value="DarkOrange">DarkOrange</option>
+                    <option value="DarkOrchid">DarkOrchid</option>
+                    <option value="DarkRed">DarkRed</option>
+                    <option value="DarkSalmon">DarkSalmon</option>
+                    <option value="DarkSeaGreen">DarkSeaGreen</option>
+                    <option value="DarkSlateBlue">DarkSlateBlue</option>
+                    <option value="DarkSlateGray">DarkSlateGray</option>
+                    <option value="DarkSlateGrey">DarkSlateGrey</option>
+                    <option value="DarkTurquoise">DarkTurquoise</option>
+                    <option value="DarkViolet">DarkViolet</option>
+                    <option value="DeepPink">DeepPink</option>
+                    <option value="DeepSkyBlue">DeepSkyBlue</option>
+                    <option value="DimGray">DimGray</option>
+                    <option value="DimGrey">DimGrey</option>
+                    <option value="DodgerBlue">DodgerBlue</option>
+                    <option value="FireBrick">FireBrick</option>
+                    <option value="FloralWhite">FloralWhite</option>
+                    <option value="ForestGreen">ForestGreen</option>
+                    <option value="Fuchsia">Fuchsia</option>
+                    <option value="Gainsboro">Gainsboro</option>
+                    <option value="GhostWhite">GhostWhite</option>
+                    <option value="Gold">Gold</option>
+                    <option value="GoldenRod">GoldenRod</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Grey">Grey</option>
+                    <option value="Green">Green</option>
+                    <option value="GreenYellow">GreenYellow</option>
+                    <option value="HoneyDew">HoneyDew</option>
+                    <option value="HotPink">HotPink</option>
+                    <option value="IndianRed">IndianRed</option>
+                    <option value="Indigo">Indigo</option>
+                    <option value="Ivory">Ivory</option>
+                    <option value="Khaki">Khaki</option>
+                    <option value="Lavender">Lavender</option>
+                    <option value="LavenderBlush">LavenderBlush</option>
+                    <option value="LawnGreen">LawnGreen</option>
+                    <option value="LemonChiffon">LemonChiffon</option>
+                    <option value="LightBlue">LightBlue</option>
+                    <option value="LightCoral">LightCoral</option>
+                    <option value="LightCyan">LightCyan</option>
+                    <option value="LightGoldenRodYellow">LightGoldenRodYellow</option>
+                    <option value="LightGray">LightGray</option>
+                    <option value="LightGrey">LightGrey</option>
+                    <option value="LightGreen">LightGreen</option>
+                    <option value="LightPink">LightPink</option>
+                    <option value="LightSalmon">LightSalmon</option>
+                    <option value="LightSeaGreen">LightSeaGreen</option>
+                    <option value="LightSkyBlue">LightSkyBlue</option>
+                    <option value="LightSlateGray">LightSlateGray</option>
+                    <option value="LightSlateGrey">LightSlateGrey</option>
+                    <option value="LightSteelBlue">LightSteelBlue</option>
+                    <option value="LightYellow">LightYellow</option>
+                    <option value="Lime">Lime</option>
+                    <option value="LimeGreen">LimeGreen</option>
+                    <option value="Linen">Linen</option>
+                    <option value="Magenta">Magenta</option>
+                    <option value="Maroon">Maroon</option>
+                    <option value="MediumAquaMarine">MediumAquaMarine</option>
+                    <option value="MediumBlue">MediumBlue</option>
+                    <option value="MediumOrchid">MediumOrchid</option>
+                    <option value="MediumPurple">MediumPurple</option>
+                    <option value="MediumSeaGreen">MediumSeaGreen</option>
+                    <option value="MediumSlateBlue">MediumSlateBlue</option>
+                    <option value="MediumSpringGreen">MediumSpringGreen</option>
+                    <option value="MediumTurquoise">MediumTurquoise</option>
+                    <option value="MediumVioletRed">MediumVioletRed</option>
+                    <option value="MidnightBlue">MidnightBlue</option>
+                    <option value="MintCream">MintCream</option>
+                    <option value="MistyRose">MistyRose</option>
+                    <option value="Moccasin">Moccasin</option>
+                    <option value="NavajoWhite">NavajoWhite</option>
+                    <option value="Navy">Navy</option>
+                    <option value="OldLace">OldLace</option>
+                    <option value="Olive">Olive</option>
+                    <option value="OliveDrab">OliveDrab</option>
+                    <option value="Orange">Orange</option>
+                    <option value="OrangeRed">OrangeRed</option>
+                    <option value="Orchid">Orchid</option>
+                    <option value="PaleGoldenRod">PaleGoldenRod</option>
+                    <option value="PaleGreen">PaleGreen</option>
+                    <option value="PaleTurquoise">PaleTurquoise</option>
+                    <option value="PaleVioletRed">PaleVioletRed</option>
+                    <option value="PapayaWhip">PapayaWhip</option>
+                    <option value="PeachPuff">PeachPuff</option>
+                    <option value="Peru">Peru</option>
+                    <option value="Pink">Pink</option>
+                    <option value="Plum">Plum</option>
+                    <option value="PowderBlue">PowderBlue</option>
+                    <option value="Purple">Purple</option>
+                    <option value="RebeccaPurple">RebeccaPurple</option>
+                    <option value="Red">Red</option>
+                    <option value="RosyBrown">RosyBrown</option>
+                    <option value="RoyalBlue">RoyalBlue</option>
+                    <option value="SaddleBrown">SaddleBrown</option>
+                    <option value="Salmon">Salmon</option>
+                    <option value="SandyBrown">SandyBrown</option>
+                    <option value="SeaGreen">SeaGreen</option>
+                    <option value="SeaShell">SeaShell</option>
+                    <option value="Sienna">Sienna</option>
+                    <option value="Silver">Silver</option>
+                    <option value="SkyBlue">SkyBlue</option>
+                    <option value="SlateBlue">SlateBlue</option>
+                    <option value="SlateGray">SlateGray</option>
+                    <option value="SlateGrey">SlateGrey</option>
+                    <option value="Snow">Snow</option>
+                    <option value="SpringGreen">SpringGreen</option>
+                    <option value="SteelBlue">SteelBlue</option>
+                    <option value="Tan">Tan</option>
+                    <option value="Teal">Teal</option>
+                    <option value="Thistle">Thistle</option>
+                    <option value="Tomato">Tomato</option>
+                    <option value="Turquoise">Turquoise</option>
+                    <option value="Violet">Violet</option>
+                    <option value="Wheat">Wheat</option>
+                    <option value="White">White</option>
+                    <option value="WhiteSmoke">WhiteSmoke</option>
+                    <option value="Yellow">Yellow</option>
+                    <option value="YellowGreen">YellowGreen</option>
+            </select>
+        </div>
+        <div>
+            <div class="form-controls">
+                <div name="data-action-1">
+                    <div id="btn-save" class="save-action button">
+                        <i class="fa-regular fa-floppy-disk"></i>
+                        <span>Save</span>
+                    </div>    
+                </div>
+                <div name="data-action-2">
+                    <div id="btn-update" class="update-action button">
+                        <i class="fa-regular fa-floppy-disk"></i>
+                        <span>Update</span>
+                    </div>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="form-col3" class="rounded bordered card">
+        <div><i name="vehicle-brand-hint" class="fa-solid fa-circle-info" onclick="showHint(this);"></i></div>
+        <div><i name="vehicle-model-hint" class="fa-solid fa-circle-info" onclick="showHint(this);"></i></div>
+        <div></div>
+        <div>
+            <div id="btn-upload">
+                <label id="btn-upload-lbl" for="image-upload" class="button">
+                    <i class="fa-solid fa-upload"></i>
+                    <span>Browse</span>
+                </label>
+            </div>
+            <input type="file" id="image-upload" accept="image/png" hidden/>
+        </div>
+        <div><i name="vehicle-year-hint" class="fa-solid fa-circle-info" onclick="showHint(this);"></i></div>
+        <div><i name="vehicle-mileage-hint" class="fa-solid fa-circle-info" onclick="showHint(this);"></i></div>
+        <div><i name="vehicle-engine-cc-hint" class="fa-solid fa-circle-info" onclick="showHint(this);"></i></div>
+        <div><i name="vehicle-engine-hp-hint" class="fa-solid fa-circle-info" onclick="showHint(this);"></i></div>
+        <div>
+            <div id="vehicle-color-sample"></div>
+        </div>
+        <div></div>
+    </div>
+</div>
+
+<div id="info-container">
+    <div>
+        <div id="info-message"></div>
+    </div>
+</div>
+
+<div style="display:none">
+    <div id="vehicle-id" ></div>
+</div>
+
+<script>
+    getById("btn-save").addEventListener("click", addVehicleData);
+
+    getById("image-upload").addEventListener("change", uiImageUpload)
+    getById("vehicle-color").addEventListener("change", updateColorSample);
+    getById("btn-update").addEventListener("click", updateVehicleData);
+</script>

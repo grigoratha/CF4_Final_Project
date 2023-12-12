@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+
+        <link rel="stylesheet" href="css/common.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/register.css">
+
+        <link rel="stylesheet" href="fontawesome/css/all.css">
+
+        <script src="js/jquery.js"></script>
+        <script src="fontawesome/js/all.js"></script> 
+
+        <script src="js/common.js"></script>
+        <script src="js/register.js"></script>
+        <script src="js/rest.js"></script>
+    </head>
+    <body>
+        <div id="register">
+            <div id="register-form">
+                <div>Register</div>
+                <span>Username:</span>
+                <input id="username" type="text"></input>
+                <span>e-mail:</span>
+                <input id="email" type="text"></input>
+                <span>Password: </span>
+                <input id="password" type="password"></input>
+                <span>Confirm Password: </span>
+                <input id="repassword" type="password"></input>
+                <select id="role">
+                    <option value="user">User</option>
+                    <option value="admin">Admin</option>
+                </select>
+                <div id="btn-register" class="button">
+                    <i class="fa-regular fa-id-card"></i>
+                    <span>Register</span>
+                </div>
+                <div id="btn-cancel" class="button">
+                    <i class="fa-solid fa-xmark"></i>
+                    <span>Cancel</span>    
+                </div>
+            </div>
+        </div>
+
+        <script>
+            getById("btn-register").addEventListener("click", registerUser);
+            getById("btn-cancel").addEventListener("click", function() {
+                window.location.href = "http://localhost:3000";
+            });
+        </script>
+    </body>
+</html>

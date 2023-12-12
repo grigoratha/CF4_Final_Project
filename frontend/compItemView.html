@@ -1,0 +1,61 @@
+<div id="item-n" name="data-container" class="item-container">
+    <div class="item-info">
+        <div name="data-brand" style="display:none;">{{brand}}</div>
+        <div name="data-model" style="display:none;">{{model}}</div>
+        <div name="data-title">{{title}}</div>
+        <div name="data-id">{{id}}</div>
+    </div>
+    <div class="item-image">
+        <img name="data-img" src="">
+    </div>
+
+    <div class="item-description">
+        <div name="data-description">{{description}}</div>
+    </div>
+
+    <div class="item-specifications">
+        <table>
+            <tr>
+                <td>Year: </td>
+                <td name="data-spec-1">{{spec-1}}</td>
+            </tr>
+
+            <tr>
+                <td>Mileage: </td>
+                <td name="data-spec-2">{{spec-2}}</td>
+            </tr>
+
+            <tr>
+                <td>Engine CC:</td>
+                <td name="data-spec-3">{{spec-3}}</td>
+            </tr>
+
+            <tr>
+                <td>Engine BHP:</td>
+                <td name="data-spec-4">{{spec-4}}</td>
+            </tr>
+
+            <tr>
+                <td>Color:</td>
+                <td name="data-spec-5">{{spec-5}}</td>
+            </tr>
+        </table>
+
+        <div class="favorites-container">
+            <span name="data-favorite" data-action="add">
+                <i class="fa-solid fa-heart"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="item-controls">
+        <div name="data-action-edit" class="hover-h">
+            <i class="fa-regular fa-pen-to-square"></i> 
+            <span class="edit-action">Edit</span>
+        </div>
+        <div name="data-action-delete" class="hover-h">
+            <i class="fa-solid fa-trash-can"></i>
+            <span class="delete-action">Delete</span>
+        </div>
+    </div>
+</div>

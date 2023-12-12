@@ -1,0 +1,54 @@
+<style>
+
+</style>
+
+<div id="form-container">
+    <div id="form-header" class="rounded bordered card">
+        Update user settings
+    </div>
+
+    <div id="form-col1" class="rounded bordered card">
+        <div>Password: </div>
+        <div style="white-space: nowrap;">Confirm Password: </div>
+        <div style="height:24px;"></div>
+        <div>e-mail: </div>
+        <div></div>
+        <div style="height:24px;"></div>
+        <div>Delete Account: </div>
+    </div>
+
+    <div id="form-col2" class="rounded bordered card">
+        <div>
+            <input id="new-password" type="password" placeholder="Password"></input>
+        </div>
+        <div>
+            <input id="new-repassword" type="password" placeholder="Confirm Password"></input>
+        </div>
+        <div style="height:24px;"></div>
+        <div>
+            <input id="new-email" type="text" placeholder="e-mail"></input>
+        </div>
+        <div>
+            <div id="btn-user-update" class="button">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <span>Update</span>
+            </div>
+        </div>
+        <div style="height:24px;"></div>
+        <div>
+            <div id="btn-user-delete" class="button" style="background-color: crimson;">
+                <i class="fa-solid fa-ban"></i>
+                <span>Delete</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="form-col3" class="rounded bordered card">
+    </div>
+
+</div>
+
+<script>
+    getById("btn-user-update").addEventListener("click", updateUser);
+    getById("btn-user-delete").addEventListener("click", deleteUser);
+</script>
