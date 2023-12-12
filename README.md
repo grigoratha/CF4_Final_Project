@@ -54,7 +54,7 @@ This projects implements a car inventory management system which involves a user
 - Users are able to manage their account and can change password and/or e-mail and they can also permantly delete their account if they want to.
 
 - Users can perform CRUD operations on the inventory. <br>
-  Different allowance to perform this operations are exists based on user role. <br>
+  Different allowance to perform this operations exists based on user role. <br>
 	- Role: user can view & search inventory items
 	- Role: admin can additionally add, edit, delete inventory items
 
@@ -66,7 +66,7 @@ This projects implements a car inventory management system which involves a user
 
 #### Database Snapshot <br>
   *This is just for reference and do not reflect the actual column names or include all columns of the tables in the database*
-###### User
+###### Users
 | ID  | Username | Password   | Role  |
 |-----|----------|------------|-------|
 | 350 | Senna    | admin      | admin |
