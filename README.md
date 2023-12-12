@@ -1,32 +1,43 @@
-Final Project for Coding Factory 4
+```
+   _____          _ _               ______         _                     _  _   
+  / ____|        | (_)             |  ____|       | |                   | || |  
+ | |     ___   __| |_ _ __   __ _  | |__ __ _  ___| |_ ___  _ __ _   _  | || |_ 
+ | |    / _ \ / _` | | '_ \ / _` | |  __/ _` |/ __| __/ _ \| '__| | | | |__   _|
+ | |___| (_) | (_| | | | | | (_| | | | | (_| | (__| || (_) | |  | |_| |    | |  
+  \_____\___/ \__,_|_|_| |_|\__, | |_|  \__,_|\___|\__\___/|_|   \__, |    |_|  
+                             __/ |                                __/ |         
+                            |___/                                |___/         
+```
+
+# Final Project for Coding Factory 4
 - Athanasios Grigorakis
 - grigorata@aueb.gr
 
-Backend: http://localhost:8080
+# Backend: http://localhost:8080
 - Used Java Spring Boot 3.2
 - Available javadoc and Swagger documentation.
 
-Frontend: http://localhost:3000
+# Frontend: http://localhost:3000
 - Used Custom HTML/CSS/JavaScript/jQuery
 - Mobile-first, responsive design.
 
-Database: http://127.0.0.1:3306/cf4
+# Database: http://127.0.0.1:3306/cf4
 - Username: root
 - Password: root
 - Used MySQL
 
-The Database structure and data (included for demonstration purposes) can be created with the script: /assets/sql/create_database.sql
+*The Database structure and data (included for demonstration purposes) can be created with the script: /assets/sql/create_database.sql*
 
-Testing:
+# Testing:
 
-- Backend:
-  REST APIs tests with Postman and Swagger
-  Custom internal logging system for monitoring
-- Frontend:
-  Manual tests to ensure functionality
-  Custom internal logging system for monitoring
+### Backend:
+- REST APIs tests with Postman and Swagger
+- Custom internal logging system for monitoring
+### Frontend:
+- Manual tests to ensure functionality
+- Custom internal logging system for monitoring
 
-Assets:
+# Assets:
 - Domain Model: assets/ddd/domainModel.png
 - Javadoc: assets/javadoc/com/athgri/finalproject/utilities/package-summary.html
 - Swagger URL: http://localhost:8080/swagger-ui/index.html#/
